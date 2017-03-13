@@ -1,0 +1,25 @@
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
+<%@taglib uri="/WEB-INF/tlds/dtbweb" prefix="dtbweb"%>
+
+<%-- @currentRowItem --%>
+<jsp:useBean id="currentRowItem" class="com.doctracker.basic.pu.entities.Task" scope="request"/>    
+
+<%--
+<div>
+    <span style="width:20%">Ref Number</span><span style="width:15%">Responsibility</span>   
+    <span style="width:15%">Track Start</span><span style="width:50%">Task</span>
+</div>
+--%>
+
+<%--div itemscope itemtype="http://schema.org/???"--%>
+<table  style="width:100%; border:3px solid gray">   
+  <tr>
+    <td style="width:20%; margin:3px">${currentRowItem.doc.referencenumber}</td>
+    <td style="width:15%; margin:3px">${currentRowItem.reponsibility.abbreviation}</td>
+    <td style="width:15%; margin:3px">${currentRowItem.timeopened}</td>
+    <td style="width:50%; margin:3px">${currentRowItem.description}</td>
+  </tr>
+</table> 
+

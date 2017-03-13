@@ -1,0 +1,41 @@
+html { font-size: 100%; }/** IE 5/6 hack to enable use of em font sizes */
+body{ height:100%; font-size:16px; }
+#main_container{ 
+    height:100%; font-size:1.5em;
+    margin:auto; border:0; padding:0;  
+    color:#112233; font-family:Verdana,Helvetica,sans-serif,Arial; 
+}
+a{ text-decoration:none; }
+.smallerLighter{ font-size:0.75em; color: #777777; }
+.faint{font-size: 0.5em; color:#0595b5; }
+.borderless{ margin:0; border:0; padding:0; }
+.fullWidth{ width:100%; }
+
+#logo{ border:2px outset #EFFFEF; }
+
+#loginform{ background-color:#e5e5f3; width:100%; }
+
+#searchform{ width:100%; }
+
+#searchtable{ width:100%; background-color:#e5e5f3; }
+#searchtable tr { width: 100%; }
+#searchtable tr td input { width: 100%; font-size: 1.5em; }
+#searchtable tr td select { width: 100%; font-size: 1.5em; }
+
+#searchresultstable{ width: 100%; }
+#searchresultstable tr { width: 100%; }
+#searchresultstable tr th { font-size: 0.75em; background-color:#e5e5f3; text-align:center; vertical-align:central; border-bottom:2px solid gray;}
+#searchresultstable tr td { font-size:0.67em; background-color:#EFFFEF; text-align:justify; vertical-align:top; padding:0.5em; border-bottom:2px solid gray; }
+
+.userMessage { width:100%; margin:0; border:0; padding:0; color:#234567; }
+
+#headertable { vertical-align:top; width:100%; margin:0; border:0; padding:0; }
+#headertable tr { vertical-align:top; width:100%; margin:0; border:0; padding:0; }
+#headertable tr td { vertical-align:top; margin:0; border:0; padding:0; }
+#headertable tr td div{ vertical-align:top; }
+
+.header0 { font-weight:500; font-size:1.2em; margin:0em 0em 1em 0em; border:0; padding:0.25em; background-color:#234567; color:white;  }
+.header0 a { color:white; text-decoration:none; }
+.button0 { border:2px outset; background-color:#234567; color:white; }
+.button0:hover { border:2px outset; background-color:white; color:#234567; }
+.button0:active{ border:none; background-color:#234567; color:#e5e5f3; }

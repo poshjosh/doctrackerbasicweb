@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <context-param>
+        <param-name>productionMode</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <context-param>
+        <param-name>java.util.logging.level</param-name>
+        <param-value>INFO</param-value>
+    </context-param>
+    <context-param>
+        <description>admin user login credentials</description>
+        <param-name>admin</param-name>
+        <param-value>uuid3910</param-value>
+    </context-param>
+    <context-param>
+        <description>user1 login credentials</description>
+        <param-name>user1</param-name>
+        <param-value>enter-hq-naf</param-value>
+    </context-param>
+    <context-param>
+        <description>user2 login credentials</description>
+        <param-name>user2</param-name>
+        <param-value>openifonly-2</param-value>
+    </context-param>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>searchresults.jsp</welcome-file>
+    </welcome-file-list>
+    <error-page>
+        <exception-type>java.lang.Throwable</exception-type>
+        <location>/error.jsp</location>
+    </error-page>
+    <error-page>
+        <exception-type>com.doctracker.basic.web.exceptions.LoginException</exception-type>
+        <location>/login.jsp</location>
+    </error-page>
+</web-app>
